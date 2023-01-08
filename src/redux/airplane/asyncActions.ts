@@ -11,7 +11,7 @@ export const fetchAirplanes = createAsyncThunk<
   const { search } = params;
   // Here we fetch the airplanes applying search parameter. Pickby from Lodash is used to fom the object properties predicate returns truthy for.
   const { data } = await axios.get<Airplane[]>(
-    `https://63b0c02e6a74151a1bc6aa12.mockapi.io/airplanes`,
+    `SECRET_API_URL`,
     {
       params: pickBy(
         {
