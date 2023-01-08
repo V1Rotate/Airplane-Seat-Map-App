@@ -18,7 +18,7 @@ const SelectedAirplane: React.FC = () => {
     async function fetchAirplane() {
       try {
         const { data } = await axios.get(
-          'https://63b0c02e6a74151a1bc6aa12.mockapi.io/airplanes/' + id
+          'SECRET_API_URL' + id
         );
         setAirplane(data);
       } catch (error) {
