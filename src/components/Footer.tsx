@@ -3,7 +3,7 @@ import { ExternalLink } from 'react-external-link';
 
 export const Footer: React.FC = () => {
   return (
-    <div className='bottom-0 py-1 bg-[#575b62] text-white w-full'>
+    <div className='bottom-0 fixed py-1 bg-[#575b62] text-white w-full'>
       <div className='flex flex-row justify-center'>
         <div>
           <p className='text-xs'>© 2023 Seat Map. Developed by {'  '}</p>
